@@ -1,21 +1,18 @@
+import Formulario from './components/Formulario'
+import Header from './components/Header'
+import ListadoPacientes from './components/ListadoPacientes'
 function App() {
-  
-  const sumar = () => {
+    
+    return (
+     <div className='container mx-auto mt-20'>
+        <Header />
+        <div className='mt-20 md:flex '>
+            <Formulario />
+            <ListadoPacientes />
+        </div>
 
-    const numero = 8;
 
-    if(numero > 5){
-      console.log('Si es mayor')
-    } else{
-      console.log('No es mayor')
-    }
-  }
-  sumar()
-  return (
-     <>
-        <h1>Hola mundo</h1>
-        
-     </>
+     </div>
   )
 }
 
